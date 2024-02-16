@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,8 +29,10 @@
   <!-- codigo del header o navbar -->
   <main class="main-container">
     <header class="header">
-      <img src="./images/icon-menu.svg" alt="menu hamburguesa">
-      <img src="./images/logo.svg" alt="Logo sneakers">
+      <div class="header__navigation">
+      <img class="header__menu" src="./images/icon-menu.svg" alt="menu hamburguesa">
+      <img class="header__logo" src="./images/logo.svg" alt="Logo sneakers">
+    </div>
       <nav class="navbar">
         <ul class="navbar__items">
           <li><a href="#" class="navbar__link">Collections</a></li>
@@ -62,7 +64,7 @@
       <div class="header__cart-avatar">
         <div class="header__cart">
           <div class="header__cart--notification">3</div>
-          <img src="./images/icon-cart.svg" alt="logo carrito">
+          <img class="header__avatar" src="./images/icon-cart.svg" alt="logo carrito">
         </div>
 
         <img src="./images/image-avatar.png" alt="imagen usuario">
@@ -89,8 +91,8 @@
 
       <!-- Esta es la zona de los detalles de los sneakers como los son sus precios -->
       <article class="details">
-        <h2 class="details__company"></h2>Sneaker Company</h2>
-        <h2 class="details__title"></h2>Fall Limited Edition Sneakers</h2>
+        <h2 class="details__company">Sneaker Company</h2>
+        <h2 class="details__title">Fall Limited Edition Sneakers</h2>
         <p class="details__description"> These low-profile sneakers are your perfect casual wear companion. Featuring a
           durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
         <div class="details__prices">
