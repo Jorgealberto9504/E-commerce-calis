@@ -1,4 +1,5 @@
 @use 'variables';
+
 .header{
     // border: 1px solid red;
     display: flex;
@@ -10,8 +11,12 @@
         height: 112px;
         border-bottom: 1px solid variables.$Grayish-blue;
     }
-    &__navigation{
+    .header__navigation{
+        border: 1px solid red($color: #000000);
         width: 175px;
         display: flex;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
     }
 }
