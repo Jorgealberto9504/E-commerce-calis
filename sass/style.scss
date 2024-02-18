@@ -9,6 +9,7 @@
     width: 375px;//aqui indicamos el borde del responsive a celular
     border: 1px solid black;
     margin: auto;
+    position: relative;
     @media (min-width: 1115px){ //el@media nos indica que cuando la medida sea de 1115px el borde cambiara a 1115
         width: 1115px;
     }
