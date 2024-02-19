@@ -7,6 +7,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-    display: none;
+    z-index: 1;
+    display: none; // este display none oculta este mixin que oscurece la pagina de fondo para mostrar nuestro modal-navbar
 
+}
+@mixin image-btn($top, $left){ //mixin para los botones del carrusel
+    background-color: variables.$White;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        border-radius: 50%;
+        position:absolute;
+        top: $top;
+        left: $left;
+        &:hover{
+            cursor: pointer;
+        }
 }

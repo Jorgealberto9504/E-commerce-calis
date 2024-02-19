@@ -1,5 +1,28 @@
+@use 'variables';
+@use 'mixins';
+
 .gallery{
     &__image-container{
         background-image: url('../images/image-product-1.jpg');
+        background-position-y: -35px;
+        border: 1px solid blue;
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        
+    }
+    &__previous{
+        @include mixins.image-btn(130px, 15px);// mixin con parametros de los botones del carrusel
+                                  //se agregaron parametros de ubicacion al mixin
+
+    }
+    &__next{
+        @include mixins.image-btn(130px,320px);
+    }
+    &__thumnail{
+        display: none;
+        @media (min-width: 1115px){
+            display: block;
+        }
     }
 }
